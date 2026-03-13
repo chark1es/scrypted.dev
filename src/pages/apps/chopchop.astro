@@ -1,0 +1,105 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="ChopChop — App Overview">
+	<article class="mx-auto max-w-4xl space-y-10 px-2 pb-16 pt-4 sm:px-0">
+		<header class="glass-panel space-y-4 px-6 py-7">
+			<p class="tag-pill">Associated App</p>
+			<h1 class="text-3xl font-semibold text-black md:text-4xl">ChopChop</h1>
+			<p class="max-w-3xl text-black/75">
+				ChopChop is an invite-only expense and receipt app operated through Spwnd. It is built for small groups who need fast shared-expense tracking, receipt capture, lightweight balance history, and account access through supported sign-in methods including Google and email verification.
+			</p>
+			<div class="flex flex-wrap gap-3 pt-2">
+				<a
+					href="mailto:hello@spwnd.dev?subject=ChopChop%20access"
+					class="inline-flex items-center justify-center rounded-full border border-black bg-black px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-black/90"
+				>
+					Request access
+				</a>
+				<a
+					href="/terms"
+					class="inline-flex items-center justify-center rounded-full border border-black/50 px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.18em] text-black transition-colors hover:bg-black/5"
+				>
+					View terms
+				</a>
+				<a
+					href="/privacy"
+					class="inline-flex items-center justify-center rounded-full border border-black/50 px-6 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.18em] text-black transition-colors hover:bg-black/5"
+				>
+					View privacy
+				</a>
+			</div>
+		</header>
+
+		<section class="grid gap-4 md:grid-cols-3">
+			<article class="grid-card space-y-2">
+				<p class="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-black/55">Access</p>
+				<h2 class="text-xl font-semibold text-black">Private by default</h2>
+				<p class="text-sm leading-relaxed text-black/75">
+					ChopChop is not a public app-store listing right now. Access is granted directly by Spwnd.
+				</p>
+			</article>
+			<article class="grid-card space-y-2">
+				<p class="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-black/55">Sign-in</p>
+				<h2 class="text-xl font-semibold text-black">Supported authentication</h2>
+				<p class="text-sm leading-relaxed text-black/75">
+					Users may sign in with Google or with an email-based verification flow, depending on what is enabled for their account.
+				</p>
+			</article>
+			<article class="grid-card space-y-2">
+				<p class="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-black/55">Support</p>
+				<h2 class="text-xl font-semibold text-black">Human contact</h2>
+				<p class="text-sm leading-relaxed text-black/75">
+					Questions about access, account removal, or data requests go through <a class="underline decoration-black/30 underline-offset-4" href="mailto:hello@spwnd.dev">hello@spwnd.dev</a>.
+				</p>
+			</article>
+		</section>
+
+		<section class="glass-panel grid gap-6 px-6 py-7 md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+			<div class="space-y-3">
+				<p class="tag-pill">What it does</p>
+				<h2 class="text-3xl font-semibold text-black">Expense tracking without a finance stack</h2>
+				<p class="text-black/75">
+					ChopChop helps users record shared expenses, scan or upload receipt images, split charges across people, review balances, and manage account access. It is a coordination tool, not a bank, payment processor, accounting platform, or tax service.
+				</p>
+			</div>
+			<ul class="space-y-3 text-sm text-black/80">
+				<li class="border-b border-black/10 pb-3">Receipt image capture and upload</li>
+				<li class="border-b border-black/10 pb-3">Shared-expense and participant records</li>
+				<li class="border-b border-black/10 pb-3">Google and email-based sign-in</li>
+				<li class="pb-0">Invite-only access and manual support</li>
+			</ul>
+		</section>
+
+		<section class="space-y-4">
+			<p class="tag-pill">Data summary</p>
+			<h2 class="text-3xl font-semibold text-black">High-level privacy snapshot</h2>
+			<p class="max-w-3xl text-black/75">
+				Using ChopChop may involve account information such as your name, email, profile image, authentication identifiers, receipt images you upload, expense records you create, and limited device or diagnostic data needed to operate the app. The canonical rules for how Spwnd handles that information live in the main <a class="underline decoration-black/30 underline-offset-4" href="/privacy">Privacy Policy</a>.
+			</p>
+		</section>
+
+		<section class="glass-panel space-y-4 px-6 py-7">
+			<p class="tag-pill">Legal</p>
+			<h2 class="text-3xl font-semibold text-black">Canonical policies</h2>
+			<p class="text-black/75">
+				ChopChop uses the main Spwnd legal pages as its canonical policy URLs. If you use the app, those policies apply together with any product-specific details shown here.
+			</p>
+			<div class="flex flex-wrap gap-3">
+				<a
+					href="/terms"
+					class="inline-flex items-center justify-center rounded-full border border-black bg-black px-5 py-3 text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-black/90"
+				>
+					Terms of service
+				</a>
+				<a
+					href="/privacy"
+					class="inline-flex items-center justify-center rounded-full border border-black/50 px-5 py-3 text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-black transition-colors hover:bg-black/5"
+				>
+					Privacy policy
+				</a>
+			</div>
+		</section>
+	</article>
+</Layout>

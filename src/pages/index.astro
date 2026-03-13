@@ -7,18 +7,21 @@ const projects = [
 		description: "A public availability board so circles can see who’s free without juggling calendars.",
 		stage: "Public access",
 		availability: "Live today",
+		href: "https://whocan.work",
 	},
 	{
 		title: "sharethis.site",
 		description: "Single-word slugs that make passing links around effortless.",
 		stage: "Public access",
 		availability: "Live today",
+		href: "https://sharethis.site",
 	},
 	{
-		title: "Billie",
-		description: "Invite-only receipt parsing and expense tracking for close collaborators.",
+		title: "ChopChop",
+		description: "Invite-only receipt capture and expense tracking for close collaborators.",
 		stage: "Invite only",
 		availability: "Request access",
+		href: "/apps/chopchop",
 	},
 ];
 
@@ -77,11 +80,15 @@ const stack = [
 			{projects.map((project) => (
 				<article class="grid-card flex flex-col gap-3">
 					<header class="flex items-baseline justify-between gap-3">
-						<h3 class="text-xl font-semibold text-black">{project.title}</h3>
+						<h3 class="text-xl font-semibold text-black">
+							<a class="transition-opacity hover:opacity-70" href={project.href}>{project.title}</a>
+						</h3>
 						<span class="text-[0.7rem] uppercase tracking-[0.22em] text-black/60">{project.stage}</span>
 					</header>
 					<p class="text-sm text-black/70">{project.description}</p>
-					<p class="text-sm font-semibold text-[#007d68]">{project.availability}</p>
+					<p class="text-sm font-semibold text-[#007d68]">
+						<a class="transition-opacity hover:opacity-70" href={project.href}>{project.availability}</a>
+					</p>
 				</article>
 			))}
 		</div>
